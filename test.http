@@ -1,0 +1,29 @@
+POST http://localhost:3000/addOrder
+Content-Type: application/json
+
+{
+  "numberOfOrder": 4,
+  "addDate": "2024-10-06",
+  "instruments": "qweqwe",
+  "typeError": "test",
+  "description": "",
+  "client": "alexander",
+  "status": "в работе"
+}
+
+###
+
+GET http://localhost:3000/getAllOrders
+
+###
+
+PUT http://localhost:3000/updateOrder/4
+Content-Type: application/json
+
+{
+  "status": "готов"
+}
+###
+GET http://localhost:3000/getStatic
+
+###
